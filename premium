@@ -85,7 +85,6 @@ def login():
 		pencarian_nologin() 
 	elif menu in ["5", "05"]: 
 		free_token() 
-	elif menu in ["6", "06"]: 
 	elif menu in ["7", "07"]: 
 		ask = input(" [?] apakah kamu ingin menghapus lisensi? [Y/t]: ") 
 		if ask in ["Y", "y"]: 
