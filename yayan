@@ -31,7 +31,6 @@ current = datetime.now()
 ta = current.year
 bu = current.month
 ha = current.day
-op = bulan[nTemp]
 ### WARNA RANDOM ###
 P = '\x1b[1;97m' # PUTIH
 M = '\x1b[1;91m' # MERAH
