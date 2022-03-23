@@ -20,7 +20,7 @@ except ImportError:
 
 try:
     import bs4
-except ImportError:
+except ImportError
     print('\n [×] Modul Bs4 belum terinstall!...\n')
     os.system('pip install bs4')
 
@@ -31,12 +31,6 @@ from bs4 import BeautifulSoup
 ct = datetime.now()
 n = ct.month
 bulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
-try:
-    if n < 0 or n > 12:
-        exit()
-    nTemp = n - 1
-except ValueError:
-    exit()
 
 current = datetime.now()
 ta = current.year
@@ -514,48 +508,6 @@ def cek_apk(session,cookie):
         for i in range(len(game)):
             print("   %s%s. %s%s"%(K,i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"),N))
 
-#REGISTER
-def register():
-    os.system("clear")
-    jalan(f"\n{N}[{M}×{N}] opshh api key kamu sudah kadaluarsa silahkan upgrade ke premium!")
-    upd = input("[?] apakah ingin upgrade ke premium [Y/t]: ")
-    if upd =="":
-        print(f"{N}[{M}×{N}] Y/t memek!");time.sleep(2);register()
-    elif upd in["Y","y"]:
-        jalan("\n %s* %sAnda akan di alihkan ke whatsapp..."%(O,H));time.sleep(0.02)
-        os.system('xdg-open https://wa.me/6287799183568?text=RATU+ERROR+BELI+LISENSINYA+DOOONG...........???');time.sleep(2);register()
-    elif upd in["T","t"]:
-        jalan(f"{B} Good byee:)");exit()
-    else:
-        print(f"{N}[{M}×{N}] Y/t memek!");time.sleep(2);register()
-
-#LOGIN KEY
-def cok():
-    os.system("clear")
-    print("%s[*] ADMIN TIDAK BERTANGGUNG JAWAB ATAS PENYALAHGUNAAN TOOLS INI"%(N))
-    print("[*] UNTUK MENDAPATKAN COOKIES GUNAKAN TOOLS COOKIEDOUGH EKSTENSION YANG ADA DI KIWI BROWSER (%sdownload browser kiwi di play store%s)"%(H,N))
-    print("[*] JIKA TIDAK MENGERTI MENGGUNAKAN TOOLS SILAHKAN HUBUNGI ADMIN DENGAN KETIK '%sADMIN%s'"%(H,N))
-    print("[*] JIKA INGIN MENGGUNAKAN FREE USER SILAHKAN KETIK %sTRIAL%s UNTUK MENDAPATKAN API KEY GERATIS (%s1 day%s)"%(H,N,H,N))
-    print("[*] (ADMIN IS NOT RESPONSIBLE FOR ABUSE OF THIS TOOL)")
-    print("[*] SCRIPT TELAH DI UPATE PADA TANGGAL [Rabu 19 Januari 2022]")
-    key = input("\n[*] masukan api key kamu : ")
-    if key == '':
-        print("\n[!] jangan kosong bro");time.sleep(2);cok()
-    elif key in['admin','Admin','ADMIN']:
-        jalan("\n %s* %sAnda akan di alihkan ke whatsapp..."%(O,H));time.sleep(0.02)
-        os.system('xdg-open https://wa.me/6287799183568?text=RATU+ERROR+BELI+LISENSINYA+DOOONG...........???');cok()
-    elif key in['trial','Trial','TRIAL']:
-        jalan("\n %s* %sAnda akan di alihkan ke website..."%(O,H));time.sleep(0.02)
-        os.system('xdg-open https://apikey.yayanxd.my.id/');cok()
-    try:
-        req = requests.get(f"https://apikey.yayanxd.my.id/check.php?key={key}").json()
-        kadaluarsa = req['expired']
-        user = req["nama"]
-        open('.license.txt', 'w').write(key)
-        jalan(f"\n[{H}•{N}] Hallo {H}{user}{N} apikey anda masih berlaku sampai tanggal: {M}{kadaluarsa}{N}, silahkan gunakan dengan bijak.");time.sleep(2)
-        exit("[%s!%s] jalankan ulang perintah nya dengan ketik python run.py"%(M,N))
-    except KeyError:
-        print("\n%s[%s!%s] api key %s%s%s tidak terdaftar di website"%(N,M,N,M,key,N));time.sleep(2);cok()
 
 # MULAI CRACK
 class __crack__:
