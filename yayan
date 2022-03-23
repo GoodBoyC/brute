@@ -1,6 +1,6 @@
 #coding=utf8
 
-import os
+import requests, os, re, bs4, sys, json, time, random, datetime, subprocess
 try:
     import requests
 except ImportError:
@@ -19,12 +19,6 @@ except ImportError:
     print('\n [×] Modul Bs4 belum terinstall!...\n')
     os.system('pip install bs4')
 
-import requests, os, re, bs4, sys, json, time, random, datetime, subprocess
-from concurrent.futures import ThreadPoolExecutor as YayanGanteng
-from datetime import datetime
-from bs4 import BeautifulSoup
-
-# LO KONTOL
 def logo():
     print("""%s
  _____.___.            _____ _____________________
