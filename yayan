@@ -88,7 +88,7 @@ def hasil(ok,cp):
 
 #MASUK TOKEN
 def yayanxd():
-    os.system('open')
+    os.system('clear')
     print (' %s*%s tools ini menggunakan login cookies facebook.\n %s*%s apakah kamu sudah tau cara mendapatkan cookies facebook?\n %s*%s ketik open untuk mendapatkan cookies'%(O,N,O,N,O,N))
     cookie = input("\n %s[%s?%s] Cookies : %s"% (N,K,N,O))
     if cookie in['OPEN','Open','open']:
@@ -740,3 +740,8 @@ class __crack__:
             hasil(ok,cp)
         else:
             print('\n %s[%s×%s] input yang bener'%(N,M,N));self.__pler__()
+
+
+if __name__ == '__main__':
+    Masuk()
+    
