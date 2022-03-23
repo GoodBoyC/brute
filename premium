@@ -62,39 +62,7 @@ def jalan(z):
 def logo(): 
 	os.system("clear") 
 	print(f"""%s __________            _____ _____________________\n \____    /           /     \\______   \_   _____/ \n   /     /   ______  /  \ /  \|    |  _/|    __)  \n  /     /_  /_____/ /    Y    \    |   \|     \   \n /_______ \         \____|__  /______  /\___  /   \n         \/                 \/       \/     \/"""%(N)) 
-def lisensi(): 
-	logo() 
-	print("-"*50) 
-	print(" [+] lisensi : -") 
-	print(f" [+] tanggal : {tgl}") 
-	print(" [01]. sudah mempunyai lisensi") 
-	print(" [02]. belum mempunyai lisensi") 
-	print(" [03]. lihat akun hasil crack ") 
-	pil = input(" [?] pilih menu : ") 
-	if pil == "": 
-		exit(" [!] pilih jawaban dengan benar") 
-	if pil == "1": 
-		key = input(" [+] masukan lisensi : ") 
-		open("license.txt","w").write(key) 
-		menu() 
-	elif pil == "2": 
-		cek_harga() 
-	elif pil == "3": 
-		lihathasil() 
-	else: 
-def cek_harga(): 
-	print(" [1] 1 Bulan 50k") 
-	print(" [2] 2 Bulan 100k") 
-	print(" [3] 3 Bulan 150k") 
-	asu = input(" [?] pilih :") 
-	if asu in[""," "]: 
-	elif asu in["1"]: 
-		data = ("Assalamualaikum, saya ingin membeli lisensi 1 bulan").replace(' ','%20') 
-		os.system('xdg-open https://wa.me/6282329761867?text=' +data) 
-	elif asu in["2"]: 
-		data = ("Assalamualaikum, saya ingin membeli lisensi 2 bulan").replace(' ','%20') 
-	elif asu in["3"]: 
-		data = ("Assalamualaikum, saya ingin membeli lisensi 3 bulan").replace(' ','%20') 
+
 def login(): 
 	ceklisen() 
 	print(" [01]. login dengan token facebook") 
