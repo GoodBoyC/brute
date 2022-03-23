@@ -15,7 +15,7 @@ except ImportError:
 
 try:
     import bs4
-except ImportError
+except ImportError:
     print('\n [×] Modul Bs4 belum terinstall!...\n')
     os.system('pip install bs4')
 
