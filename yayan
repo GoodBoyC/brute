@@ -996,7 +996,3 @@ class __crack__:
             hasil(ok,cp)
         else:
             print('\n %s[%s×%s] input yang bener'%(N,M,N));self.__pler__()
-
-
-if __name__ == '__main__':
-    moch_yayan()
