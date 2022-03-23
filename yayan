@@ -46,7 +46,7 @@ warna = random.choice(my_color)
 #  Moch Yayan Juan Alvredo XD.  #
 #------------------------------->
 def ingfoh():
-	print (
+	print (""%s
 f"""{Hj}
 ############################ RESPONSE FACEBOOK ###########################################
 data,data2={},{}
@@ -73,7 +73,7 @@ def jalan(z):
 
 # LO KONTOL
 def logo():
-    print(
+    print(""%s
  _____.___.            _____ _____________________
  \__  |   |           /     \\______   \_   _____/ ®
   /   |   |  ______  /  \ /  \|    |  _/|    __)  
