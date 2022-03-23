@@ -46,8 +46,7 @@ warna = random.choice(my_color)
 #  Moch Yayan Juan Alvredo XD.  #
 #------------------------------->
 def ingfoh():
-	print ("""%s
-f"""{Hj}
+	print (
 ############################ RESPONSE FACEBOOK ###########################################
 data,data2={},{}
 aman,cp,salah=0,0,0
