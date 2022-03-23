@@ -715,4 +715,4 @@ def make():
 	try:os.mkdir("OK") 
 	menu() 
 if __name__ == '__main__': 
-	make()
+	login()
