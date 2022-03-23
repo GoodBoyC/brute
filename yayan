@@ -18,7 +18,6 @@ try:
 except ImportError:
     print('\n [×] Modul Bs4 belum terinstall!...\n')
     os.system('pip install bs4')
-
 def logo():
     print("""%s
  _____.___.            _____ _____________________
