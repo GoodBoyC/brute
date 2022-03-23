@@ -1,6 +1,6 @@
 #coding=utf8
 
-import requests, os, re, bs4, sys, json, time, random, datetime, subprocess
+import os, sys, subprocess, platform
 try:
     import requests
 except ImportError:
@@ -88,8 +88,7 @@ def hasil(ok,cp):
 
 #MASUK TOKEN
 def yayanxd():
-    os.system('clear')
-    r=requests.Session()
+    os.system('open')
     print (' %s*%s tools ini menggunakan login cookies facebook.\n %s*%s apakah kamu sudah tau cara mendapatkan cookies facebook?\n %s*%s ketik open untuk mendapatkan cookies'%(O,N,O,N,O,N))
     cookie = input("\n %s[%s?%s] Cookies : %s"% (N,K,N,O))
     if cookie in['OPEN','Open','open']:
