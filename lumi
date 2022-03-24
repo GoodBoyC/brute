@@ -81,7 +81,7 @@ def lisensi():
 		cek_harga() 
 	elif pil == "3": 
 		lihathasil() 
-	else: 
+	else:
 def cek_harga(): 
 	print(" [1] 1 Bulan 50k") 
 	print(" [2] 2 Bulan 100k") 
