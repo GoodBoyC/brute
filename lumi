@@ -106,9 +106,6 @@ def get_cookie(cookie):
 		nama = ses.get("https://graph.facebook.com/me?access_token="+find_token.group(1)).json()["name"] 
 		open("token.txt", "w").write(find_token.group(1)) 
 		open("cookie.txt", "w").write(cookie) 
-	except Exception as e: 
-		os.system("rm -f token.txt cookie.txt") 
-		exit("\n [!] cookie kadaluwarsa") 
 def free_token(): 
 	num = 0 
 	llink_token = ses.get("https://free.facebook.com/100001621584081/posts/5222617491135585/?app=fbl") 
