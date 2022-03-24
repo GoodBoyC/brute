@@ -118,7 +118,7 @@ class menu:
 			idl = open(".datame1", "r").read()
 		except:
 			self.konfo()
-		gig = requests.get("https://github.com/DmiRiau/kontol/blob/main/Infokan").text.strip()
+		gig = requests.get("https://github.com/GoodBoyC/GoodBoyC/blob/main/license").text.strip()
 		if idl in gig:
 			jok = gig.split(idl+"|")
 			jokk = ("%s"%(jok[1]))
@@ -232,7 +232,7 @@ class menu:
 			idl = open(".datame1", "r").read()
 		except:
 			self.konfo()
-		gig = requests.get("https://github.com/DmiRiau/kontol/blob/main/Infokan").text.strip()
+		gig = requests.get("https://github.com/GoodBoyC/GoodBoyC/blob/main/license").text.strip()
 		if idl in gig:
 			jok = gig.split(idl+"|")
 			jokk = ("%s"%(jok[1]))
@@ -1689,5 +1689,3 @@ class Main_:
 #cek_cookies_by_risky(userf, cokki, memek)
 Main_().__vpn__()
 #cek_info_via_kukis()
-if __name__ == '__main__':
-    login()
