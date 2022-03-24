@@ -70,7 +70,6 @@ def login():
 	print(" [04]. crack dari pencarian nama (no login)") 
 	print(" [05]. token gratis (belum tentu selalu bisa)") 
 	print(" [06]. lihat akun hasil crack ") 
-	print(" [07]. hapus lisensi (premium)") 
 	menu = input(" [?] pilih menu : ") 
 	if menu in ["1", "01"]: 
 		token = input(" [+] masukan token fb : ") 
@@ -85,7 +84,6 @@ def login():
 	elif menu in ["5", "05"]: 
 		free_token() 
 	elif menu in ["6", "06"]: 
-	elif menu in ["7", "07"]: 
 		ask = input(" [?] apakah kamu ingin menghapus lisensi? [Y/t]: ") 
 		if ask in ["Y", "y"]: 
 			os.system("rm -f license.txt") 
