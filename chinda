@@ -20,4 +20,4 @@ except ImportError:
 from data import logo
 
 if __name__ == '__main__':
-    cok.Brute().moch_yayan()
+    log.Brute().moch_yayan()
