@@ -78,7 +78,7 @@ class Cek_Crack:
                     titid  = kontol.replace(" [✓] ","  \x1b[0m[\x1b[1;92m✓\x1b[0m]\x1b[1;92m ")
                     print(f"{titid}{N}");time.sleep(0.03)
                 prints(Panel(f"             {hijau}PROSES MENGECEK HASIL SELESAI{hapus}"))
-                input(f"   [ {O}KEMBALI{N} ] ");yy.Brute()
+                input(f"   [ {O}TEKAN ENTER {N} ] ");yy.Brute()
         elif xz in["2", "02"]:
             try:
                 xxx = os.listdir("results/CP")
@@ -117,24 +117,24 @@ class Cek_Crack:
                     titid  = kontol.replace(" [×] ", "  \x1b[0m[\x1b[1;93m×\x1b[0m]\x1b[1;93m ")
                     print(f"{titid}{N}");time.sleep(0.03)
                 prints(Panel(f"             {kuning}PROSES MENGECEK HASIL SELESAI{hapus}"))
-                input(f"   [ {O}KEMBALI{N} ] ");yy.Brute()
+                input(f"   [ {O}TEKAN ENTER {N} ] ");yy.Brute()
         elif xz in["3","03"]:
             prints(Panel(f"""[{biru_m}01{hapus}] hapus hasil ok
 [{biru_m}02{hapus}] hapus hasil cp
 [{biru_m}03{hapus}] kembali""", title=f"{merah}HAPUS HASIL CRACK{hapus}"))
-            pil = input("  [?] pilih: ")
+            pil = input(f"  [{O}?{N}] pilih: ")
             if pil in ["1", "01"]:
                 try:os.remove("results/OK")
-                except:pass
+                except:os.system("rm -rf results/OK")
                 try:os.mkdir("results/OK")
                 except:pass
-                prints(Panel(f"[{hijau}✓{hapus}] berhasil menghapus semua hasil crack."));exit()
+                prints(Panel(f"[{hijau}✓{hapus}] berhasil menghapus semua hasil ok."));input(f"   [ {O}TEKAN ENTER {N} ] ");yy.Brute()
             elif pil in ["2", "02"]:
                 try:os.remove("results/CP")
-                except:pass
+                except:os.system("rm -rf results/CP")
                 try:os.mkdir("results/CP")
                 except:pass
-                prints(Panel(f"[{hijau}✓{hapus}] berhasil menghapus semua hasil crack."));exit()
+                prints(Panel(f"[{hijau}✓{hapus}] berhasil menghapus semua hasil cp."));input(f"   [ {O}TEKAN ENTER {N} ] ");yy.Brute()
             elif pil in ["3", "03"]:
                 self.hasil()
             else:
