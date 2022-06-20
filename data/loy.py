@@ -1,6 +1,6 @@
 #######################################################
 # Name           : Yayan Multi Brute Facebook (YMBF)  #
-# File           : loy.py                             #
+# File           : loy.py                            #
 # Author         : Moch Yayan Juan Alvredo XD.        #
 # Github         : https://github.com/Yayan-XD        #
 # Facebook       : https://www.facebook.com/KM39453   #
@@ -30,7 +30,7 @@ kuning = '[#FFFF00]'
 class Cek_Crack:
     def __init__(self):
         self.hsl_cp, self.hsl_ok = [], []
-        self.hasil()
+        self.xa, self.xx = 0, {}
     
     def hasil(self):
         prints(Panel(f"""[{biru_m}01{hapus}] check hasil crack ok
@@ -49,8 +49,6 @@ class Cek_Crack:
             if len(self.hsl_ok)==0:
                 prints(Panel(f"🙁 {merah}tidak ada file yang mau di cek{hapus}"));exit()
             else:
-                self.xa = {}
-                self.xx = 0
                 prints(Panel(f"       HASIL {hijau}OK {hapus}YANG TERSIMPAN DI FOLDER ANDA"))
                 for ini in self.hsl_ok:
                     try:fi1 = open(f"results/OK/{ini}").readlines()
@@ -78,7 +76,7 @@ class Cek_Crack:
                     titid  = kontol.replace(" [✓] ","  \x1b[0m[\x1b[1;92m✓\x1b[0m]\x1b[1;92m ")
                     print(f"{titid}{N}");time.sleep(0.03)
                 prints(Panel(f"             {hijau}PROSES MENGECEK HASIL SELESAI{hapus}"))
-                input(f"   [ {O}TEKAN ENTER {N} ] ");yy.Brute()
+                input(f"   [ {O}KEMBALI{N} ] ");yy.Brute().moch_yayan()
         elif xz in["2", "02"]:
             try:
                 xxx = os.listdir("results/CP")
@@ -88,8 +86,6 @@ class Cek_Crack:
             if len(self.hsl_cp)==0:
                 prints(Panel(f"🙁 {merah}tidak ada file yang mau di cek{hapus}"));exit()
             else:
-                self.xa = {}
-                self.xx = 0
                 prints(Panel(f"       HASIL {kuning}CP {hapus}YANG TERSIMPAN DI FOLDER ANDA"))
                 for tod in self.hsl_cp:
                     try:fi2 = open(f"results/CP/{tod}").readlines()
@@ -117,29 +113,29 @@ class Cek_Crack:
                     titid  = kontol.replace(" [×] ", "  \x1b[0m[\x1b[1;93m×\x1b[0m]\x1b[1;93m ")
                     print(f"{titid}{N}");time.sleep(0.03)
                 prints(Panel(f"             {kuning}PROSES MENGECEK HASIL SELESAI{hapus}"))
-                input(f"   [ {O}TEKAN ENTER {N} ] ");yy.Brute()
+                input(f"   [ {O}KEMBALI{N} ] ");yy.Brute().moch_yayan()
         elif xz in["3","03"]:
             prints(Panel(f"""[{biru_m}01{hapus}] hapus hasil ok
 [{biru_m}02{hapus}] hapus hasil cp
 [{biru_m}03{hapus}] kembali""", title=f"{merah}HAPUS HASIL CRACK{hapus}"))
-            pil = input(f"  [{O}?{N}] pilih: ")
+            pil = input("  [?] pilih: ")
             if pil in ["1", "01"]:
                 try:os.remove("results/OK")
-                except:os.system("rm -rf results/OK")
+                except:pass
                 try:os.mkdir("results/OK")
                 except:pass
-                prints(Panel(f"[{hijau}✓{hapus}] berhasil menghapus semua hasil ok."));input(f"   [ {O}TEKAN ENTER {N} ] ");yy.Brute()
+                prints(Panel(f"[{hijau}✓{hapus}] berhasil menghapus semua hasil crack."));exit()
             elif pil in ["2", "02"]:
                 try:os.remove("results/CP")
-                except:os.system("rm -rf results/CP")
+                except:pass
                 try:os.mkdir("results/CP")
                 except:pass
-                prints(Panel(f"[{hijau}✓{hapus}] berhasil menghapus semua hasil cp."));input(f"   [ {O}TEKAN ENTER {N} ] ");yy.Brute()
+                prints(Panel(f"[{hijau}✓{hapus}] berhasil menghapus semua hasil crack."));exit()
             elif pil in ["3", "03"]:
                 self.hasil()
             else:
                 print("");prints(Panel(f"😡 memu [bold red]{pil}[/] tidak ada, cek menu nya!"));time.sleep(3);self.hasil()
         elif xz in["4","04"]:
-            yy.Brute()
+            yy.Brute().moch_yayan()
         else:
             print("");prints(Panel(f"😡 memu [bold red]{xz}[/] tidak ada, cek menu nya!"));time.sleep(3);self.hasil()
