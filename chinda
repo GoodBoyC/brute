@@ -17,7 +17,7 @@ except ImportError:
     print('\n [\x1b[1;91m!\x1b[0m] Modul Rich belum terinstall!...\n')
     os.system('pip install rich')
 #################################################################################
-from data import logo
+from src import cok
 
 if __name__ == '__main__':
-    log.Brute().moch_yayan()
+    cok.Brute().moch_yayan()
