@@ -1,16 +1,3 @@
-#######################################################
-# Name           : Brute Facebook (BF)                #
-# File           : run.py                             #
-# Author         : Moch Yayan Juan Alvredo XD.        #
-# Github         : https://github.com/Yayan-XD        #
-# Facebook       : https://www.facebook.com/KM39453   #
-# Website        : https://www.yayanxd.my.id          #
-# Python version : 0.4                                #
-#######################################################
-
-############# DON'T REMOVE THIS FUNCTIONS #############
-
-
 import os
 try:
     import requests
@@ -33,4 +20,4 @@ except ImportError:
 from src import cok
 
 if __name__ == '__main__':
-    cok.Brute()
+    cok.Brute().cek_xxx()
