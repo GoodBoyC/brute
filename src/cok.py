@@ -1,4 +1,4 @@
-import requests, os, sys, json, time, random, subprocess, urllib
+import requests, os, sys, json, time, random, subprocess, re
 from platform import platform
 from urllib.error import URLError
 from rich import print as prints
@@ -26,41 +26,26 @@ warna_rich = random.choice(["[bold red]","[deep_pink3]","[blue]","[green]","[cya
 ############################ RESPONSE FACEBOOK ######################################
 class Brute:
     def __init__(self):
-        self.url = "https://keylicense.yayanxd.my.id/check.php?key="
+        self.url = "https://github.com/GoodBoyC/jim/blob/main/data/..../...../.../.../.../...."
 
     def hapus_log(self):
         try:os.remove(".token.txt");os.remove(".cokie.txt")
         except:pass
 
-    def moch_yayan(self):
-        asy.Logo().log()
+    def cek_xxx(self):
         try:
             key = open("data/lisen.txt", "r").read()
         except FileNotFoundError:
             exit(xx.Log_key(self.url))
-        try:
-            xnxx = urllib.request.urlopen(self.url+key+"&dev="+platform())
-            asuu = json.loads(xnxx.read())
-            mail = asuu["email"]
-            todz = asuu["usage"]
-            tod  = asuu["usage"].replace("premium", "[green]Ya[/]").replace("trial", "[red]Tidak[/]")
-            notice = asuu["readtext"]
-            bergabung = asuu["join"]
-            kadaluarsa = asuu["expired"]
-            IPS = requests.get("https://www.httpbin.org/ip").json()["origin"]
-            prints(Panel(f"""[{warna_rich}•{hapus}] Email      : {mail}
-[{warna_rich}•{hapus}] Bergabung  : {bergabung}
-[{warna_rich}•{hapus}] Premium    : {tod}
-[{warna_rich}•{hapus}] Kadaluarsa : {kadaluarsa} {hijau}{notice}{hapus}
-[{warna_rich}•{hapus}] IP         : {IPS}""",title=f'{hijau}INFO LISENSI{hapus}'))
-            if asuu["status"] =="error":
-                exit(f"\n  [{M}!{N}] error: "+asuu["msg"])
-            elif asuu["status"] in ["kadaluarsa", "sudah kadaluarsa"]:
-                prints(Panel("😢 oppsh lisensi mu sudah kadaluarsa"));time.sleep(3);exit(xx.Log_key().momok())
-        except URLError:
-            print("");prints(Panel("😔[bold red] gagal menghubungkan ke server, silahkan cek koneksi anda dan mainkan mode pesawat 5 detik."));exit()
-        except KeyError:
-            print("");prints(Panel("😔[bold red] oppsh key anda telah mencapai batas masa aktif nya, silahkan upgrade ke premium."));time.sleep(3);xx.Log_key().momok()
+        xxx = requests.get(self.url).text
+        nan = re.findall('line">(.*?)<', str(xxx))
+        if key in nan:
+            self.moch_yayan()
+        else:
+            exit(xx.Log_key(self.url))
+
+    def moch_yayan(self):
+        asy.Logo().log()
         try:
             tokenz = open(".token.txt", "r").read()
             cookie = {'cookie': open(".cokie.txt", "r").read()}
