@@ -20,4 +20,4 @@ except ImportError:
 from src import cok
 
 if __name__ == '__main__':
-    cok.Brute().cek_xxx()
+    cok.Brute().__init__()
