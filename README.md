@@ -38,7 +38,6 @@ cd brutefb
 git pull
 python run.py
 ```
-Thanks to [Yayan XD](https://github.com/Yayan-XD)
 
 ### Info
 This tool works only on arch64 mobiles
@@ -48,3 +47,5 @@ This tool works only on arch64 mobiles
 Send me a message on WhatsApp for license
 
 <b>• [WhatsApp](https://api.whatsapp.com/send?phone=+2349067338953&text=I+want+to+buy+license+key)
+###### Credit
+Thanks to [Yayan XD](https://github.com/Yayan-XD)
