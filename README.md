@@ -39,6 +39,11 @@ git pull
 python run.py
 ```
 
+## login
+Login with cookies
+
+
+
 ### Info
 This tool works only on arch64 mobiles
 4gb RAM phones and above 
