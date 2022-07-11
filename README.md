@@ -37,3 +37,4 @@ cd brutefb
 git pull
 python run.py
 ```
+Thanks to [Yayan XD](https://github.com/Yayan-XD)
