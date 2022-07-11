@@ -2,7 +2,7 @@ PREMIUM FACEBOOK CLONING TOOL
 
 
 
-Chinda     X    [Yayan XD](https://github.com/Yayan-XD)
+😎[Yayan XD](https://github.com/Yayan-XD) X Chinda 😎
 
 
 # How to install
