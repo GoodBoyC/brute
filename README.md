@@ -1,6 +1,7 @@
 PREMIUM FACEBOOK CLONING TOOL
 
 
+[Yayan XD](https://github.com/Yayan-XD) X Chinda
 
 # How to install
 ## Setup
@@ -38,3 +39,12 @@ git pull
 python run.py
 ```
 Thanks to [Yayan XD](https://github.com/Yayan-XD)
+
+### Info
+This tool works only on arch64 mobiles
+4gb RAM phones and above 
+
+### License
+Send me a message on WhatsApp for license
+
+<b>• [WhatsApp](https://api.whatsapp.com/send?phone=+2349067338953&text=I+want+to+buy+license+key)
