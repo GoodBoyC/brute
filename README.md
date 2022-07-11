@@ -43,6 +43,8 @@ python run.py
 Login with cookies
 
 
+# Results
+![template](https://github.com/GoodBoyC/brutefb/blob/master/pycache/IMG-20220711-WA0006.jpg)
 
 ### Info
 This tool works only on arch64 mobiles
