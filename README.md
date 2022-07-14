@@ -49,6 +49,7 @@ python run.py
 
 ## login
 Login with cookies
+![template](https://github.com/GoodBoyC/brutefb/blob/master/pycache/Screenshot_20220710-225712.png)
 
 
 # Results
