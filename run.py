@@ -33,4 +33,4 @@ except ImportError:
 from src import cok
 
 if __name__ == '__main__':
-    cok.Brute()
+    cok.Brute().cek_xxx()
