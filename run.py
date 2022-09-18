@@ -30,13 +30,7 @@ except ImportError:
     print('\n [\x1b[1;91m!\x1b[0m] Modul Rich belum terinstall!...\n')
     os.system('pip install rich')
 #################################################################################
-from src.cok import Brute
+from src import cok
 
 if __name__ == '__main__':
-    os.system("git pull");os.system("rm -rf results/OK/...");os.system("rm -rf results/CP/...");os.system("rm -rf results/IG/OK/...");os.system("rm -rf results/IG/CP/...")
-   # os.system("clear")
-   # print("please wait....")
-   # print()
-   # print("script sedang dalam perbaikan..")
-   # exit()
-    Brute()
+    cok.Brute().cek_xxx()
