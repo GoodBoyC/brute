@@ -26,7 +26,7 @@ pip install rich
 pip install nodejs
 pip install cython
 pkg install git
-rm -rf brutefb
+rm -rf brute
 ```
 
 ## install clone
