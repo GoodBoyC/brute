@@ -1,4 +1,4 @@
-PREMIUM FACEBOOK CLONING TOOL
+PREMIUM FACEBOOK AND INSTAGRAM CLONING TOOL
 
 
 
@@ -31,29 +31,29 @@ rm -rf brutefb
 
 ## install clone
 ```bash
-git clone https://github.com/GoodboyC/brutefb
+git clone https://github.com/GoodboyC/brute
 ```
 
 ## Run tool
 ```bash
-cd brutefb
+cd brute
 python run.py
 ```
 
 ## Update tool
 ```bash
-cd brutefb
+cd brute
 git pull
 python run.py
 ```
 
 ## login
 Login with cookies
-![template](https://github.com/GoodBoyC/brutefb/blob/master/pycache/Screenshot_20220710-225712.png)
+![template](https://github.com/GoodBoyC/brute/blob/master/pycache/Screenshot_20220710-225712.png)
 
 
 # Results
-![template](https://github.com/GoodBoyC/brutefb/blob/master/pycache/IMG-20220711-WA0006.jpg)
+![template](https://github.com/GoodBoyC/brute/blob/master/pycache/IMG-20220711-WA0006.jpg)
 
 ### Info
 This tool works only on arch64 mobiles
