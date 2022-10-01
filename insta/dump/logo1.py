@@ -1,6 +1,6 @@
 #######################################################
-# Name           : Brute Facebook (BF)                #
-# File           : logo.py                            #
+# Name           : Brute Instagram (BG)               #
+# File           : logo1.py                           #
 # Author         : Moch Yayan Juan Alvredo XD.        #
 # Github         : https://github.com/Yayan-XD        #
 # Facebook       : https://www.facebook.com/KM39453   #
@@ -10,17 +10,16 @@
 
 ############# DON'T REMOVE THIS FUNCTIONS #############
 
-import sys, os, datetime, random
+import os, sys, random
 
-#---- MODULE RICH IN PYTHON -------
+#----------- MODULE RICH -------------
 from rich import print as prints
-from datetime import datetime
 from rich.panel import Panel
 
 reed = "[bold red]"
 blue = "[bold blue]"
 
-class Logo:
+class Turu:
 
     def __init__(self):
         if "linux" in sys.platform.lower():
@@ -41,4 +40,3 @@ class Logo:
    ╚██████╗██║  ██║██║██║ ╚████║██████╔╝██║  ██║
     ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚═════╝ ╚═╝  ╚═╝
  {WAR}version: 0.4[/]"""))
-   
