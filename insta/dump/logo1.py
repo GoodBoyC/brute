@@ -1,6 +1,6 @@
 #######################################################
-# Name           : Brute Instagram (BG)               #
-# File           : logo1.py                           #
+# Name           : Brute Facebook (BF)                #
+# File           : logo.py                            #
 # Author         : Moch Yayan Juan Alvredo XD.        #
 # Github         : https://github.com/Yayan-XD        #
 # Facebook       : https://www.facebook.com/KM39453   #
@@ -10,16 +10,17 @@
 
 ############# DON'T REMOVE THIS FUNCTIONS #############
 
-import os, sys
+import sys, os, datetime, random
 
-#----------- MODULE RICH -------------
+#---- MODULE RICH IN PYTHON -------
 from rich import print as prints
+from datetime import datetime
 from rich.panel import Panel
 
 reed = "[bold red]"
 blue = "[bold blue]"
 
-class Turu:
+class Logo:
 
     def __init__(self):
         if "linux" in sys.platform.lower():
@@ -31,10 +32,13 @@ class Turu:
         else:
             try:os.system("clear")
             except:pass
-        prints(Panel(f"""{blue} ____             _         ______                  {reed} _____ _____ 
-{blue}|  _ \           | |       |  ____|                 {reed}|_   _/ ____|
-{blue}| |_) |_ __ _   _| |_ ___  | |__ ___  _ __ ___ ___  {reed}  | || |  __ 
-{blue}|  _ <| '__| | | | __/ _ \ |  __/ _ \| '__/ __/ _ \ {reed}  | || | |_ |
-{blue}| |_) | |  | |_| | ||  __/ | | | (_) | | | (_|  __/ {reed} _| || |__| |
-{blue}|____/|_|   \__,_|\__\___| |_|  \___/|_|  \___\___| {reed}|_____\_____|
-                        {reed}BY Yayan XD. @2022""", style="bold white", width=70))
+        WAR = random.choice(["[deep_pink3]","[green]","[cyan]","[blue]"])
+        prints(Panel(f"""{WAR}  
+    ██████╗██╗  ██╗██╗███╗   ██╗██████╗  █████╗ 
+   ██╔════╝██║  ██║██║████╗  ██║██╔══██╗██╔══██╗
+   ██║     ███████║██║██╔██╗ ██║██║  ██║███████║
+   ██║     ██╔══██║██║██║╚██╗██║██║  ██║██╔══██║
+   ╚██████╗██║  ██║██║██║ ╚████║██████╔╝██║  ██║
+    ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚═════╝ ╚═╝  ╚═╝
+ {WAR}version: 0.4[/]"""))
+   
