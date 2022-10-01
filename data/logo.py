@@ -10,7 +10,7 @@
 
 ############# DON'T REMOVE THIS FUNCTIONS #############
 
-import sys, os, datetime
+import sys, os, datetime, random
 
 #---- MODULE RICH IN PYTHON -------
 from rich import print as prints
@@ -32,13 +32,15 @@ class Logo:
         else:
             try:os.system("clear")
             except:pass
-        prints(Panel(f"""{blue} ____             _         ______                  {reed} ______ ____  
-{blue}|  _ \           | |       |  ____|                 {reed}|  ____|  _ \ 
-{blue}| |_) |_ __ _   _| |_ ___  | |__ ___  _ __ ___ ___  {reed}| |__  | |_) |
-{blue}|  _ <| '__| | | | __/ _ \ |  __/ _ \| '__/ __/ _ \ {reed}|  __| |  _ < 
-{blue}| |_) | |  | |_| | ||  __/ | | | (_) | | | (_|  __/ {reed}| |    | |_) |
-{blue}|____/|_|   \__,_|\__\___| |_|  \___/|_|  \___\___| {reed}|_|    |____/ 
-                        {reed}BY Yayan XD. @2022""", style="bold white", width=70, title=f"[cyan]{self.waktu()}"))
+        WAR = random.choice(["[deep_pink3]","[green]","[cyan]","[blue]"])
+        prints(Panel(f"""{WAR}  
+    ██████╗██╗  ██╗██╗███╗   ██╗██████╗  █████╗ 
+   ██╔════╝██║  ██║██║████╗  ██║██╔══██╗██╔══██╗
+   ██║     ███████║██║██╔██╗ ██║██║  ██║███████║
+   ██║     ██╔══██║██║██║╚██╗██║██║  ██║██╔══██║
+   ╚██████╗██║  ██║██║██║ ╚████║██████╔╝██║  ██║
+    ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚═════╝ ╚═╝  ╚═╝
+ {WAR}version: 0.4[/]"""))
     def waktu(self):
         now = datetime.now()
         hours = now.hour
