@@ -5,3 +5,6 @@ if bit == '64bit':
     xoshnaw()
 elif bit == '32bit':
     print("Not work on 32bit")
+
+from src import cok
+Brute()
