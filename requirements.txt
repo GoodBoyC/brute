@@ -1,0 +1,7 @@
+requests
+mechanize
+lolcat
+bs4
+rich
+nodejs
+cython
